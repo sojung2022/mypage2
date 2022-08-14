@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>결혼 청첩장</title>
+    <style>
+        * {
+            font-family: 'IBM Plex Sans KR', sans-serif;
+        }
+        body, h1, h2, h3, p, a {
+            font-size: 16px;
+            margin: 0px;
+            padding: 20px;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        .wrap {
+            width: 350px;
+            height: auto;
+                }
+        .save{
+            margin-top: 10px;
+            margin-bottom: -8px;
+        }
+        .date{
+            margin-top: -15px;
+            margin-bottom: 10px;
+        }
+
+        h1{
+            background-color: pink; 
+            
+            font-weight: bolder;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main{
+            width: 350px;
+            height: 500px;
+        }
+
+        .main>h1{
+            background-color: pink; 
+            
+            font-weight: bold;
+            line-height: 200%;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .title{
+            font-size: larger;
+            text-align: center;
+        }
+        .location{
+            text-align: center;
+            margin-bottom: -30px;
+        }
+
+        h2{
+            background-color: white; 
+            font-weight: 450;
+            color: pink;
+            letter-spacing: 3px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .name{
+            font-size: x-large;
+            text-align: center;
+            background-color: white; 
+            font-weight: 450;
+            
+            color: pink;
+            border-top: 2px solid pink;
+            border-bottom: 2px solid pink;
+            margin-bottom: 30px;
+
+            width:200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 65px;
+        }
+
+        img{
+            width: 300px;
+            height: auto;
+
+            border: 3px solid pink;   
+
+            margin-left: 22px;
+        }
+        .congrats{
+            background-color: white; 
+            font-weight: 450;
+            text-align: center;
+        }
+        .bottom{
+            
+            width: 270px;
+            height: 230px;
+            margin-inline: 30px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: left;
+        }
+        .bottom>textarea{
+            height: 100px;
+            margin: 10px 0px 10px 0px;
+        }
+        .send{
+            width: 150px;
+            height: 50px;
+            align-self : center;
+
+            border-radius: 10px;
+            border: none;
+            background-color: pink;
+
+            color:azure;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>영희와 철수의 첫 시작을 축하해주세요</h1>
+        <h2 class="save">Save The Date</h2>
+            <div class="pic">
+                <img src="청첩장 사진.png">
+            </div>
+        <h2 class="date">12.31.SUNDAY.PM.12:30</h2>
+        <div class="name">
+               김영희 & 이철수   
+        </div>
+        <div class="main">
+            <h1>
+            <p class="title">INVITATION</p>
+            <p>서로 다른 두 사람이 만나<br/>사랑으로 하나 되는 자리에<br/>소중한 여러분들을 초대합니다.<br/>기쁠 때나, 슬플 때나<br/>서로를 사랑으로 품으며<br/>행복의 계단을 쌓아가겠습니다.<br/>저희의 첫 시작을 함께 해주신다면<br/>감사한 마음 깊이 간직하며 잘 살겠습니다.</p>
+            <p class="location">2023.12.31.SUN.PM12:30<br/>스파르타웨딩 르탄홀</p>
+            </h1>
+        </div>
+        <div class="bottom">
+            <p class="congrats">축하메시지를 남겨주세요</p></h2>
+            <input type="text"    placeholder="이름">
+            <textarea placeholder="메시지를 남겨주세요"></textarea>
+            <button class="send">메시지 남기기</button>
+        </div>
+    </div>
+</body>
+</html>
